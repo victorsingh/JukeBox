@@ -1,0 +1,104 @@
+body{
+  margin:0;
+  padding:0;
+  font-family:Arial;
+  font-weight:100;
+  color:white;
+  background-color:black;
+}
+#jB-Container{
+  background-color: purple;
+}
+#hamburger{
+  cursor:pointer;
+  font-family:Arial;
+  display:inline;
+}
+#exitMenu{
+  display:none;
+}
+#menu, #album{
+  float:left;
+}
+#playState{
+  text-align:center;
+}
+#ui-Container{
+  height:500px;
+  color:white;
+}
+#menu{
+
+  display:none;
+  background-color:red;
+  position:absolute;
+  background: rgba(255, 255, 255, 0.5);
+  padding-top:20px;
+  text-align:center;
+  border-bottom-right-radius: :30%;
+  border-bottom-left-radius: :30%;
+
+
+
+}
+#album{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width:100%;
+}
+#playState{
+  margin:0;
+  padding-bottom:20px;
+}
+#controls{
+  padding-top:100px;
+}
+#search{
+  display:inline;
+  width:auto;
+  color:black;
+
+}
+ul{
+  padding:0;
+}
+li{
+  font-family: Arial;
+  font-weight: 100;
+  margin-bottom:10px;
+  font-size:20px;
+  list-style: none;
+  cursor:pointer;
+}
+li:hover{
+  color:orange;
+}
+#author{
+  height: 100px;
+  background-color:black;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+#author > h5{
+  color: yellow;
+  padding:0;
+  margin:0;
+  font-size:24px;
+}
+
+@media all and (max-width:960px) {
+  #menu{
+    width:100%;
+    height:100%;
+    font-size:32px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color:black;
+  }
+  #search{
+    margin-bottom:20px;
+  }
+}
